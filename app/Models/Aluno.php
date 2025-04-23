@@ -29,4 +29,10 @@ class Aluno extends Model
     {
         return $this->belongsTo(Turma::class);
     }
+    public function comprovante(){
+        return $this->hasMany(Comprovante::class);
+    }
+    public function declaracao(){
+        return $this->hasMany(Declaracao::class);
+    }
 }

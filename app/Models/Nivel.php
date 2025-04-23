@@ -14,4 +14,9 @@ class Nivel extends Model
         'nome',
     ];
 
+    public function curso()
+    {
+        return $this->hasMany(Curso::class);
+    }
+
 }
